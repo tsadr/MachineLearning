@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Presentation</title>
+
+    <meta name="description" content="Presentation Of keePass Password Safe " />
+    <meta name="author" content="Mohammad Sadr" />
+
+    <link href="css/font.css" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+    <div id="bored" class="step slide" data-x="0" data-y="0">
+        <q style="font-size: 90px; line-height: 122px; margin-top:15%;"><b>Precision-Recall <br/>vs<br/> ROC</b></q>
+    </div>
+    <div class="step slide" data-x="0" data-y="1000">
+      <q style="line-height: 0px; text-align:left;margin-top:10px;">
+        <b>Precision-Recall:</b>
+      </q>
+      <q style="margin-top:3%;"><img style="width: 440px;height: 615px;" src="Pics/Pic02.svg"></q>
+    </div>
+    <div class="step slide" data-x="0" data-y="2000">
+      <q style="line-height: 0px; text-align:left;margin-bottom:-20px;">
+        <b>Precision-Recall vs ROC:</b>
+      </q>
+      <q style="margin-left: -3%; margin-top:18%;"><img src="Pics/Pic01.png"></q>
+    </div>
+  	<div class="step slide" data-x="0" data-y="5000" data-z="-5000">
+      <q style="line-height: 0px; text-align:left;margin-bottom:-20px;">
+        <b>Precision-Recall vs ROC:</b>
+      </q>
+      <q style="margin-left: -1%; margin-top:10%;"><img src="Pics/Pic03.png"></q>
+    </div>
+    <div class="step slide" data-x="0" data-y="8000">
+      <q style="line-height: 50px; text-align:left;margin-top:30px;">
+        <b>Precision-Recall vs ROC:</b>
+      </q>
+      <q style="font-size: 33px;line-height: 0px;">Method 1: 100 retrieved documents, 90 relevant</q>
+      <q style="font-size: 33px;line-height: 0px;">Method 2: 2000 retrieved documents, 90 relevant</q>
+    </div>
+    <div class="step slide" data-x="-1000" data-y="8000">
+      <q style="line-height: 50px; text-align:left;margin-top:30px;">
+        <b>Precision-Recall vs ROC:</b>
+      </q>
+      <q style="font-size: 33px;line-height: 0px;">Method 1: 100 retrieved documents, 90 relevant</q>
+      <q style="font-size: 33px;line-height: 0px;">Method 2: 2000 retrieved documents, 90 relevant</q>
+      <q style="font-size: 33px;line-height: 0px;">Method 1: <b>0.9 TPR</b>, <b>0.00001 FPR</b></q>
+      <q style="font-size: 33px;line-height: 0px;">Method 2: <b>0.9 TPR</b>, <b>0.00191 FPR</b></q>
+      <q style="font-size: 33px;line-height: 0px;">Difference of <b>0.0019</b></q>
+    </div>
+    <div class="step slide" data-x="1000" data-y="8000">
+      <q style="line-height: 50px; text-align:left;margin-top:30px;">
+        <b>Precision-Recall vs ROC:</b>
+      </q>
+      <q style="font-size: 33px;line-height: 0px;">Method 1: 100 retrieved documents, 90 relevant</q>
+      <q style="font-size: 33px;line-height: 0px;">Method 2: 2000 retrieved documents, 90 relevant</q>
+      <q style="font-size: 33px;line-height: 0px;">Method 1: <b>0.9 recall</b>, <b>0.9 precision</b></q>
+      <q style="font-size: 33px;line-height: 0px;">Method 2: <b>0.9 recall</b>, <b>0.045 precision</b></q>
+      <q style="font-size: 33px;line-height: 0px;">Difference of <b>0.855</b></q>
+    </div>
+    <div class="step slide" data-x="0" data-y="9000">
+        <q style="line-height: 0px; text-align:left;margin-top:70px;">
+          <b>References:</b>
+        </q>
+        <q style="line-height: 45px;text-align:left;padding-left:1em;font-size: 30px;margin-bottom: -35px;">[1]  Davis,J., & Goadrich,. (2006). The Relationship Between Precision-Recall and ROC Curves.</q>
+        <q style="line-height: 0px;text-align:left;padding-left:1em;font-size: 30px;">[2] <a href="https://www.kaggle.com/general/7517">https://www.kaggle.com/general/7517</a></q>
+        <q style="line-height: 0px;text-align:left;padding-left:1em;font-size: 30px;">[3] <a href="https://en.wikipedia.org/wiki/Precision_and_recall">https://en.wikipedia.org/wiki/Precision_and_recall</a></q>
+    </div>
+    <div class="step" data-x="0" data-y="9000" data-z="-10000">
+        <q style="margin-left:10%;">
+          <b>Thanks for your patient ;)</b>
+        </q>
+    </div>
+  </div>
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
